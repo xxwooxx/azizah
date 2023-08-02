@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang Saya</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home">
+      <div class="hero">
+        <h1>Selamat Datang di Portofolio Saya</h1>
+        <p>Saya adalah seorang Web Developer berpengalaman</p>
+      </div>
+    </section>
+    
+    <section id="about">
+      <div class="container">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seorang Web Developer dengan keahlian dalam HTML, CSS, dan JavaScript. Saya memiliki pengalaman dalam membangun situs web responsif dan menarik.</p>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <div class="container">
+        <h2>Proyek</h2>
+        <div class="project">
+          <h3>Proyek 1</h3>
+          <p>Deskripsi proyek 1 di sini...</p>
+          <a href="#">Lihat Proyek</a>
+        </div>
+        <div class="project">
+          <h3>Proyek 2</h3>
+          <p>Deskripsi proyek 2 di sini...</p>
+          <a href="#">Lihat Proyek</a>
+        </div>
+        <!-- Tambahkan lebih banyak proyek di sini -->
+      </div>
+    </section>
+    
+    <section id="contact">
+      <div class="container">
+        <h2>Hubungi Saya</h2>
+        <form action="#" method="post">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Portofolio Saya. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.project p {
+  color: #666;
+}
+
+.project a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.project a:hover {
+  background-color: #555;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
